@@ -14,7 +14,7 @@ const WeatherComponent = (props) => {
         const {name ,value} =props;
         return(
             <div className='info-container'>
-                <img src={WeatherInfoIcons[name]} id='img' className='info-icon'/>
+                <img src={WeatherInfoIcons[name]} id='img' className='info-icon' alt=''/>
                 <label htmlFor="img" className='info-lable'>{value} <span id='info-span'>{name}</span></label>
             </div>
         )
@@ -25,7 +25,7 @@ const WeatherComponent = (props) => {
                 <p className='weather-celcious'>
                     <span className='weather-span'> {`${Math.floor(weather?.main?.temp - 273)} °C`} </span> 
                     {`| ${weather?.weather[0].description}`}</p>  
-                <img className='weather-logo1' src="icons/perfect-day.svg" /><br />
+                <img className='weather-logo1' src="icons/perfect-day.svg" alt='' /><br />
             </div>
             <div>
                 <p className='weather-location'> {`${weather?.name},${weather?.sys?.country}`}</p>

@@ -4,7 +4,7 @@ const CityComponent = (props) => {
     const {setCity,fetchWeather} =props;
     return (
         <div>
-            <img className='weather-logo' src="icons/perfect-day.svg" /><br />
+            <img className='weather-logo' src="icons/perfect-day.svg" alt='' /><br />
             <label className='city-lable'>Find weather of your city</label>
             
             <form  className='city-form' onSubmit={fetchWeather} >
